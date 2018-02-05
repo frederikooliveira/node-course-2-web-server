@@ -51,6 +51,13 @@ app.get('/about', (req, res) => {
     });
 });
 
+app.get('/project', (req, res) => {
+    res.render('project.hbs', {
+        pageTitle: 'Portifolio page',
+        wellcomeMessage: 'My portifolio page'
+    });
+});
+
 app.get('/bad', (req, res) => {
     res.send({
         code: 404,
